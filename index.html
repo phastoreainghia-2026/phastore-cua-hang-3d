@@ -8,8 +8,8 @@
 <meta name="theme-color" content="#791D27">
 <title>Pha Store — Cửa hàng 3D</title>
 <meta name="description" content="Đến Đúng Nơi · Mua Đúng Chỗ — đi dạo cửa hàng Pha Store bằng 3D.">
-  <script type="module" crossorigin src="./assets/index-BU9l8jje.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BlXRz2we.css">
+  <script type="module" crossorigin src="./assets/index-tIh0UNzo.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-EGZxEOML.css">
 </head>
 <body data-mode="3d">
 <canvas id="c" tabindex="0" aria-label="Cửa hàng 3D Pha Store"></canvas>
@@ -18,6 +18,8 @@
   <div><div id="brand"></div><div id="tagline"></div></div>
   <span id="open" class="badge"></span>
   <span class="grow"></span>
+  <button id="menuBtn" type="button" aria-expanded="false" aria-controls="menuBox">☰ Menu<span id="menuN"></span></button>
+  <div id="menuBox">
   <div class="timkiem"><input id="tim" type="search" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="ketqua" aria-label="Tìm hàng" placeholder="Tìm hàng (tên hoặc mã)…"><div id="ketqua" role="listbox" hidden></div></div>
   <label class="sens">Nhạy <input id="sens" type="range" min="0.002" max="0.012" step="0.001" value="0.005" aria-label="Độ nhạy xoay"></label>
   <span id="calls"></span>
@@ -27,6 +29,7 @@
   <button id="nhanhBtn" type="button">Đặt nhanh</button>
   <button id="cartBtn" type="button" aria-label="Giỏ hàng"></button>
   <button id="mode" type="button"></button>
+  </div>
 </header>
 <nav id="khu" aria-label="Chọn khu"></nav>
 <div id="notice" role="status" hidden></div>
