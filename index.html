@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" type="image/png" href="./favicon.png">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#791D27">
+<title>Pha Store — Cửa hàng 3D</title>
+<meta name="description" content="Đến Đúng Nơi · Mua Đúng Chỗ — đi dạo cửa hàng Pha Store bằng 3D.">
+  <script type="module" crossorigin src="./assets/index-Dh00jWzk.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-B5BDNcJr.css">
+</head>
+<body data-mode="3d">
+<canvas id="c" tabindex="0" aria-label="Cửa hàng 3D Pha Store"></canvas>
+<header>
+  <img class="logo" src="./logo.webp" alt="Logo Pha Store" width="44" height="44">
+  <div><div id="brand"></div><div id="tagline"></div></div>
+  <span id="open" class="badge"></span>
+  <span class="grow"></span>
+  <div class="timkiem"><input id="tim" type="search" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="ketqua" aria-label="Tìm hàng" placeholder="Tìm hàng (tên hoặc mã)…"><div id="ketqua" role="listbox" hidden></div></div>
+  <label class="sens">Nhạy <input id="sens" type="range" min="0.002" max="0.012" step="0.001" value="0.005" aria-label="Độ nhạy xoay"></label>
+  <span id="calls"></span>
+  <button id="nhanhBtn" type="button">Đặt nhanh</button>
+  <button id="cartBtn" type="button" aria-label="Giỏ hàng"></button>
+  <button id="mode" type="button"></button>
+</header>
+<nav id="khu" aria-label="Chọn khu"></nav>
+<div id="notice" role="status" hidden></div>
+<canvas id="map" width="150" height="150" aria-hidden="true"></canvas>
+<div id="hint"></div>
+<section id="list" aria-label="Danh sách sản phẩm"></section>
+<aside id="nhanh" hidden aria-label="Đặt nhanh"></aside>
+<aside id="cart" hidden aria-label="Giỏ hàng"></aside>
+<aside id="panel" hidden aria-live="polite"></aside>
+<div id="loading"><h1>Pha Store</h1><div id="barLabel" role="status"></div><div class="track"><div id="bar"></div></div></div>
+</body>
+</html>
